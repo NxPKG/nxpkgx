@@ -1,0 +1,3 @@
+.config/ast-grep/rule-tests/__snapshots__/** linguist-generated=true
+crates/nxpkgpack-tests/tests/snapshot/**/output/** linguist-generated=true
+crates/nxpkgrepo-lockfiles/fixtures/*.lock text eol=lf
