@@ -1,0 +1,11 @@
+{
+  "$schema": "https://nxpkg.build/schema.json",
+  "globalEnv": [],
+  "globalPassThroughEnv": [],
+  "pipeline": {
+    "build": {
+      "env": [],
+      "passThroughEnv": []
+    }
+  }
+}

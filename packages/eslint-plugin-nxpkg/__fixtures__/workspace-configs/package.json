@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "nxpkg run build"
+  },
+  "devDependencies": {
+    "nxpkg": "latest"
+  },
+  "packageManager": "yarn@1.22.19"
+}

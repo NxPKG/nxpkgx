@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nxpkg build",
+    "dev": "nxpkg dev --no-cache --continue",
+    "lint": "nxpkg lint",
+    "clean": "nxpkg clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "nxpkg build --filter=docs^... && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.22.0",
+    "eslint": "^7.32.0",
+    "eslint-config-acme": "workspace:*",
+    "prettier": "^2.5.1",
+    "nxpkg": "^1.9.3"
+  },
+  "packageManager": "pnpm@8.9.0"
+}

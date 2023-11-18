@@ -1,0 +1,17 @@
+{
+  "name": "@khulnasoft/nxpkgpack-cli",
+  "version": "0.0.0",
+  "description": "Nxpkgpack-cli runtime",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@next/react-refresh-utils": "^13.0.6",
+    "@vercel/nxpkgpack-ecmascript-runtime": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.11"
+  }
+}

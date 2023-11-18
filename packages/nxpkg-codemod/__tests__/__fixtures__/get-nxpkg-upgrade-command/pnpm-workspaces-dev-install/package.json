@@ -1,0 +1,8 @@
+{
+  "name": "pnpm-workspaces",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "nxpkg": "1.0.0"
+  }
+}

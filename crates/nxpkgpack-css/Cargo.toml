@@ -1,0 +1,46 @@
+[package]
+name = "nxpkgpack-css"
+version = "0.1.0"
+description = "TBD"
+license = "MPL-2.0"
+edition = "2021"
+autobenches = false
+
+[lib]
+bench = false
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+async-trait = { workspace = true }
+indexmap = { workspace = true }
+indoc = { workspace = true }
+once_cell = { workspace = true }
+regex = { workspace = true }
+serde = { workspace = true }
+nxpkg-tasks = { workspace = true }
+nxpkg-tasks-fs = { workspace = true }
+nxpkg-tasks-hash = { workspace = true }
+nxpkgpack-core = { workspace = true }
+nxpkgpack-ecmascript = { workspace = true }
+nxpkgpack-swc-utils = { workspace = true }
+
+swc_core = { workspace = true, features = [
+  "ecma_ast",
+  "css_ast",
+  "css_ast_serde",
+  "css_codegen",
+  "css_parser",
+  "css_utils",
+  "css_visit",
+  "css_visit_path",
+  "css_compat",
+  "css_modules",
+  "common",
+  "common_concurrent",
+] }
+
+[build-dependencies]
+nxpkg-tasks-build = { workspace = true }

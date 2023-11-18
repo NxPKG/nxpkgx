@@ -1,0 +1,12 @@
+{
+  "name": "normal-workspaces",
+  "version": "0.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "nxpkg": "1.0.0"
+  }
+}

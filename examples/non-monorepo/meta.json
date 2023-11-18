@@ -1,0 +1,4 @@
+{
+  "name": "Non-Monorepo",
+  "description": "Example of using Nxpkgrepo in a single project without workspaces"
+}

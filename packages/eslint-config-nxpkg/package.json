@@ -1,0 +1,37 @@
+{
+  "name": "eslint-config-nxpkg",
+  "version": "1.10.17-canary.3",
+  "description": "ESLint config for Nxpkgrepo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nxpkg/nxpkg",
+    "directory": "packages/eslint-config-nxpkg"
+  },
+  "bugs": {
+    "url": "https://github.com/nxpkg/nxpkg/issues"
+  },
+  "scripts": {
+    "lint": "eslint ./index.js",
+    "lint:prettier": "prettier -c . --cache --ignore-path=../../.prettierignore"
+  },
+  "keywords": [
+    "nxpkg",
+    "eslint",
+    "nxpkgrepo",
+    "eslintconfig",
+    "eslint-config"
+  ],
+  "main": "index.js",
+  "author": "Vercel",
+  "dependencies": {
+    "eslint-plugin-nxpkg": "workspace:*"
+  },
+  "peerDependencies": {
+    "eslint": ">6.6.0"
+  },
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "@turbo/eslint-config": "workspace:*",
+    "@types/eslint": "^8.44.2"
+  }
+}

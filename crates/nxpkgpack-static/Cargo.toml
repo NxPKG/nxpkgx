@@ -1,0 +1,28 @@
+[package]
+name = "nxpkgpack-static"
+version = "0.1.0"
+description = "TBD"
+license = "MPL-2.0"
+edition = "2021"
+autobenches = false
+
+[lib]
+bench = false
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+
+nxpkg-tasks = { workspace = true }
+nxpkg-tasks-fs = { workspace = true }
+nxpkg-tasks-hash = { workspace = true }
+nxpkgpack-core = { workspace = true }
+nxpkgpack-css = { workspace = true }
+nxpkgpack-ecmascript = { workspace = true }
+
+serde = { workspace = true }
+
+[build-dependencies]
+nxpkg-tasks-build = { workspace = true }

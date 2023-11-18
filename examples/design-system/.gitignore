@@ -1,0 +1,13 @@
+.DS_Store
+node_modules
+.nxpkg
+*.log
+.next
+dist
+dist-ssr
+*.local
+.env
+.cache
+server/dist
+public/dist
+storybook-static/

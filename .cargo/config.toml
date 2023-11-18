@@ -1,0 +1,31 @@
+[env]
+CARGO_WORKSPACE_DIR = { value = "", relative = true }
+NXPKG_PNPM_WORKSPACE_DIR = { value = "", relative = true }
+
+[build]
+rustflags = ["--cfg", "nxpkg_unstable"]
+rustdocflags = ["-Znormalize-docs"]
+
+[target.x86_64-pc-windows-msvc]
+linker = "rust-lld"
+
+[alias]
+xtask = "run --package xtask --"
+tr-build = "build -p nxpkg"
+tr-run = "run -p nxpkg"
+tr-test = "groups test nxpkgrepo"
+tr-check = "groups check nxpkgrepo"
+# Builds all test code to check for compiler errors before running
+tp-pre-test = "nextest run --no-run --workspace --release --exclude nxpkg --exclude nxpkgrepo-* --exclude nxpkgpath --exclude wax --exclude globwalk --exclude globwatch --exclude pidlock"
+tp-test = "nextest run --workspace --release --no-fail-fast --exclude nxpkg --exclude nxpkgrepo-* --exclude nxpkgpath --exclude wax --exclude globwalk --exclude globwatch --exclude pidlock"
+tp-bench-test = "test --benches --workspace --release --no-fail-fast --exclude nxpkgpack-bench --exclude nxpkg --exclude nxpkgrepo-* --exclude nxpkgpath --exclude wax --exclude globwalk --exclude globwatch --exclude pidlock"
+tp-check = "check --workspace --exclude nxpkg --exclude nxpkgrepo-* --exclude nxpkgpath --exclude wax --exclude globwalk --exclude globwatch --exclude pidlock"
+tp-clippy = "clippy --workspace --exclude nxpkg --exclude nxpkgrepo-* --exclude nxpkgpath --exclude wax --exclude globwalk --exclude globwatch --exclude pidlock"
+
+[target.'cfg(all())']
+rustflags = [
+  "--cfg",
+  "nxpkg_unstable",
+  "-Zshare-generics=y",
+  "-Csymbol-mangling-version=v0",
+]

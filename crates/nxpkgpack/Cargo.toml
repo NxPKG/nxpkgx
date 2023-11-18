@@ -1,0 +1,60 @@
+[package]
+name = "nxpkgpack"
+version = "0.1.0"
+description = "TBD"
+license = "MPL-2.0"
+edition = "2021"
+autobenches = false
+
+[lib]
+bench = false
+
+[features]
+test_persistent_cache = []
+bench_against_node_nft = []
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+async-recursion = { workspace = true }
+futures = { workspace = true }
+indexmap = { workspace = true, features = ["serde"] }
+lazy_static = { workspace = true }
+regex = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true }
+
+nxpkg-tasks = { workspace = true }
+nxpkg-tasks-env = { workspace = true }
+nxpkg-tasks-fs = { workspace = true }
+nxpkgpack-core = { workspace = true }
+nxpkgpack-css = { workspace = true }
+nxpkgpack-ecmascript = { workspace = true }
+nxpkgpack-ecmascript-plugins = { workspace = true }
+nxpkgpack-env = { workspace = true }
+nxpkgpack-image = { workspace = true }
+nxpkgpack-json = { workspace = true }
+nxpkgpack-mdx = { workspace = true }
+nxpkgpack-node = { workspace = true }
+nxpkgpack-static = { workspace = true }
+nxpkgpack-wasm = { workspace = true }
+
+[dev-dependencies]
+criterion = { workspace = true, features = ["async_tokio"] }
+difference = "2.0"
+futures = { workspace = true }
+rstest = { workspace = true }
+rstest_reuse = "0.5.0"
+tokio = { workspace = true }
+nxpkg-tasks-malloc = { workspace = true, default-features = false }
+nxpkg-tasks-memory = { workspace = true }
+
+[build-dependencies]
+nxpkg-tasks-build = { workspace = true }
+
+[[bench]]
+name = "mod"
+harness = false

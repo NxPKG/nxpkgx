@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "prisma": {
+    "schema": "packages/database/prisma/schema.prisma",
+    "seed": "tsx packages/database/src/seed.ts"
+  },
+  "scripts": {
+    "build": "nxpkg run build",
+    "db:migrate:deploy": "nxpkg run db:migrate:deploy",
+    "db:push": "nxpkg run db:push",
+    "db:seed": "nxpkg run db:seed",
+    "dev": "nxpkg run dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "generate": "nxpkg run generate",
+    "lint": "nxpkg run lint"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "tsx": "^3.7.1",
+    "nxpkg": "^1.9.3"
+  },
+  "packageManager": "yarn@1.22.19"
+}

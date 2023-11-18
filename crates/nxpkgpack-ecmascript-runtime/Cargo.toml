@@ -1,0 +1,35 @@
+[package]
+name = "nxpkgpack-ecmascript-runtime"
+version = "0.1.0"
+description = "TBD"
+license = "MPL-2.0"
+edition = "2021"
+autobenches = false
+
+[lib]
+bench = false
+
+[features]
+# enable "HMR" for embedded assets
+dynamic_embed_contents = ["nxpkg-tasks-fs/dynamic_embed_contents"]
+# enable test utilities such as `RuntimeType::Dummy`
+test = []
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+indoc = { workspace = true }
+serde = { workspace = true }
+
+nxpkg-tasks = { workspace = true }
+nxpkg-tasks-fs = { workspace = true }
+nxpkgpack = { workspace = true }
+nxpkgpack-core = { workspace = true }
+nxpkgpack-ecmascript = { workspace = true }
+
+swc_core = { workspace = true }
+
+[build-dependencies]
+nxpkg-tasks-build = { workspace = true }

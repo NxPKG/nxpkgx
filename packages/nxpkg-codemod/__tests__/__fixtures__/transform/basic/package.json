@@ -1,0 +1,8 @@
+{
+  "name": "transform-basic",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "nxpkg": "1.0.0"
+  }
+}

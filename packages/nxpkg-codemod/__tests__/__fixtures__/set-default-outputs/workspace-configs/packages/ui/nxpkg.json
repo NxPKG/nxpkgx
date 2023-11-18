@@ -1,0 +1,7 @@
+{
+  "$schema": "https://nxpkg.build/schema.json",
+  "extends": ["//"],
+  "pipeline": {
+    "build-three": {}
+  }
+}

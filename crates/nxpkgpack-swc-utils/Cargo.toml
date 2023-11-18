@@ -1,0 +1,27 @@
+[package]
+name = "nxpkgpack-swc-utils"
+version = "0.1.0"
+description = "TBD"
+license = "MPL-2.0"
+edition = "2021"
+autobenches = false
+
+[lib]
+bench = false
+
+[lints]
+workspace = true
+
+[dependencies]
+nxpkg-tasks = { workspace = true }
+nxpkgpack-core = { workspace = true }
+
+swc_core = { workspace = true, features = [
+  "base",
+  "common",
+  "common_concurrent",
+  "common_sourcemap",
+] }
+
+[build-dependencies]
+nxpkg-tasks-build = { workspace = true }

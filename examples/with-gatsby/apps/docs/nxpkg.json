@@ -1,0 +1,9 @@
+{
+  "$schema": "https://nxpkg.build/schema.json",
+  "extends": ["//"],
+  "pipeline": {
+    "build": {
+      "outputs": [".next/**", "!.next/cache/**"]
+    }
+  }
+}

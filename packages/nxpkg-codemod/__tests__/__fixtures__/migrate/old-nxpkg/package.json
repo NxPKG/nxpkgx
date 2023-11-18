@@ -1,0 +1,26 @@
+{
+  "name": "no-nxpkg-json",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "nxpkg": "1.0.0"
+  },
+  "nxpkg": {
+    "$schema": "https://nxpkg.build/schema.json",
+    "pipeline": {
+      "build": {
+        "outputs": [
+          ".next/**",
+          "!.next/cache/**"
+        ]
+      },
+      "lint": {
+        "outputs": []
+      },
+      "test": {},
+      "dev": {
+        "cache": false
+      }
+    }
+  }
+}

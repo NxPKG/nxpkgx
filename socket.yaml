@@ -1,0 +1,7 @@
+# top level version field is required
+version: 2
+
+projectIgnorePaths:
+  - nxpkgrepo-tests
+  - packages/nxpkg-codemod/__tests__/
+  - examples/

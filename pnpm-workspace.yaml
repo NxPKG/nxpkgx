@@ -1,0 +1,16 @@
+packages:
+  - ".github/actions/*"
+  - "docs"
+  - "cli"
+  - "packages/*"
+  - "benchmark"
+  - "nxpkgrepo-tests/*"
+  - "examples-tests/*"
+  # Intentionally exclude the `npm` `nxpkg` package from the workspaces.
+  - "!packages/nxpkg"
+  - "packages/nxpkg-tracing-next-plugin/test/with-mongodb-mongoose"
+  - "crates/nxpkgpack-tests/tests/execution"
+  - "crates/*/js"
+  - examples
+  # Exclude the non-monorepo example as it should be treated as independent of this repo
+  - "!examples/non-monorepo"

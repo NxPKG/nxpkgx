@@ -1,0 +1,7 @@
+{
+  "name": "Next.js",
+  "description": "Minimal Nxpkgrepo example for learning the fundamentals.",
+  "template": "https://vercel.com/templates/next.js/nxpkgrepo-next-basic",
+  "featured": true,
+  "boost": true
+}

@@ -1,0 +1,49 @@
+[package]
+name = "nxpkgpack-node"
+version = "0.1.0"
+description = "TBD"
+license = "MPL-2.0"
+edition = "2021"
+autobenches = false
+
+[lib]
+bench = false
+
+[features]
+# enable "HMR" for embedded assets
+dynamic_embed_contents = ["nxpkg-tasks-fs/dynamic_embed_contents"]
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+async-stream = "0.3.4"
+bytes = { workspace = true }
+const_format = "0.2.30"
+futures = { workspace = true }
+futures-retry = { workspace = true }
+indexmap = { workspace = true, features = ["serde"] }
+mime = { workspace = true }
+once_cell = { workspace = true }
+owo-colors = { workspace = true }
+parking_lot = { workspace = true }
+regex = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+serde_qs = { workspace = true }
+tokio = { workspace = true, features = ["full"] }
+tracing = { workspace = true }
+nxpkg-tasks = { workspace = true }
+nxpkg-tasks-bytes = { workspace = true }
+nxpkg-tasks-env = { workspace = true }
+nxpkg-tasks-fs = { workspace = true }
+nxpkgpack-cli-utils = { workspace = true }
+nxpkgpack-core = { workspace = true }
+nxpkgpack-dev-server = { workspace = true }
+nxpkgpack-ecmascript = { workspace = true }
+url = { workspace = true }
+urlencoding = { workspace = true }
+
+[build-dependencies]
+nxpkg-tasks-build = { workspace = true }

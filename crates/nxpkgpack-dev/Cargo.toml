@@ -1,0 +1,41 @@
+[package]
+name = "nxpkgpack-dev"
+version = "0.1.0"
+description = "TBD"
+license = "MPL-2.0"
+edition = "2021"
+autobenches = false
+
+[lib]
+bench = false
+
+[features]
+# enable "HMR" for embedded assets
+dynamic_embed_contents = ["nxpkg-tasks-fs/dynamic_embed_contents"]
+# enable test utilities such as `RuntimeType::Dummy`
+test = ["nxpkgpack-ecmascript-runtime/test"]
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+indexmap = { workspace = true }
+indoc = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+serde_qs = { workspace = true }
+tracing = { workspace = true }
+nxpkg-tasks = { workspace = true }
+nxpkg-tasks-fs = { workspace = true }
+nxpkg-tasks-hash = { workspace = true }
+nxpkgpack = { workspace = true }
+nxpkgpack-core = { workspace = true }
+nxpkgpack-css = { workspace = true }
+nxpkgpack-ecmascript = { workspace = true }
+nxpkgpack-ecmascript-runtime = { workspace = true }
+
+swc_core = { workspace = true }
+
+[build-dependencies]
+nxpkg-tasks-build = { workspace = true }

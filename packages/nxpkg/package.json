@@ -1,0 +1,27 @@
+{
+  "name": "nxpkg",
+  "version": "1.10.17-canary.3",
+  "description": "Nxpkgrepo is a high-performance build system for JavaScript and TypeScript codebases.",
+  "repository": "https://github.com/nxpkg/nxpkg",
+  "bugs": "https://github.com/nxpkg/nxpkg/issues",
+  "homepage": "https://nxpkg.build/repo",
+  "license": "MPL-2.0",
+  "main": "./bin/nxpkg",
+  "scripts": {
+    "postversion": "node bump-version.js"
+  },
+  "bin": {
+    "nxpkg": "./bin/nxpkg"
+  },
+  "files": [
+    "bin"
+  ],
+  "optionalDependencies": {
+    "nxpkg-darwin-64": "1.10.17-canary.3",
+    "nxpkg-darwin-arm64": "1.10.17-canary.3",
+    "nxpkg-linux-64": "1.10.17-canary.3",
+    "nxpkg-linux-arm64": "1.10.17-canary.3",
+    "nxpkg-windows-64": "1.10.17-canary.3",
+    "nxpkg-windows-arm64": "1.10.17-canary.3"
+  }
+}

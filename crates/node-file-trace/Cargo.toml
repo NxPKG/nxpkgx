@@ -1,0 +1,44 @@
+[package]
+name = "node-file-trace"
+version = "0.1.0"
+description = "TBD"
+license = "MPL-2.0"
+edition = "2021"
+
+[[bin]]
+name = "node-file-trace"
+path = "src/main.rs"
+bench = false
+
+[features]
+default = ["cli", "custom_allocator"]
+cli = ["dep:clap", "nxpkg-tasks-malloc"]
+tokio_console = [
+  "dep:console-subscriber",
+  "tokio/tracing",
+  "nxpkg-tasks/tokio_tracing",
+]
+node-api = []
+custom_allocator = ["nxpkg-tasks-malloc", "nxpkg-tasks-malloc/custom_allocator"]
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+clap = { workspace = true, optional = true, features = ["derive"] }
+console-subscriber = { workspace = true, optional = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+tokio = { workspace = true, features = ["full"] }
+
+nxpkg-tasks = { workspace = true }
+nxpkg-tasks-fs = { workspace = true }
+nxpkg-tasks-malloc = { workspace = true, optional = true, default-features = false }
+nxpkg-tasks-memory = { workspace = true }
+nxpkgpack = { workspace = true }
+nxpkgpack-cli-utils = { workspace = true }
+nxpkgpack-core = { workspace = true }
+
+[build-dependencies]
+nxpkg-tasks-build = { workspace = true }

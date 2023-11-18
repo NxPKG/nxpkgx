@@ -1,0 +1,45 @@
+[package]
+name = "nxpkgpack-tests"
+version = "0.1.0"
+description = "TBD"
+license = "MPL-2.0"
+edition = "2021"
+autobenches = false
+
+# don't publish this crate
+publish = false
+
+[lints]
+workspace = true
+
+[dependencies]
+nxpkgpack = { workspace = true }
+
+[dev-dependencies]
+anyhow = { workspace = true }
+dunce = { workspace = true }
+futures = { workspace = true }
+once_cell = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+testing = { workspace = true }
+tokio = { workspace = true }
+nxpkg-tasks = { workspace = true }
+nxpkg-tasks-bytes = { workspace = true }
+nxpkg-tasks-env = { workspace = true }
+nxpkg-tasks-fs = { workspace = true }
+nxpkg-tasks-memory = { workspace = true }
+nxpkgpack-build = { workspace = true, features = ["test"] }
+nxpkgpack-cli-utils = { workspace = true }
+nxpkgpack-core = { workspace = true, features = ["issue_path"] }
+nxpkgpack-dev = { workspace = true, features = ["test"] }
+nxpkgpack-ecmascript-plugins = { workspace = true, features = [
+  "transform_emotion",
+] }
+nxpkgpack-ecmascript-runtime = { workspace = true }
+nxpkgpack-env = { workspace = true }
+nxpkgpack-node = { workspace = true }
+nxpkgpack-test-utils = { workspace = true }
+
+[build-dependencies]
+nxpkg-tasks-build = { workspace = true }

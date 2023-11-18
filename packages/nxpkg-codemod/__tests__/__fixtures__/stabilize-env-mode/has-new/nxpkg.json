@@ -1,0 +1,9 @@
+{
+  "$schema": "https://nxpkg.build/schema.json",
+  "globalPassThroughEnv": ["GLOBAL_PASSTHROUGH"],
+  "pipeline": {
+    "build": {
+      "passThroughEnv": ["TASK_PASSTHROUGH"]
+    }
+  }
+}

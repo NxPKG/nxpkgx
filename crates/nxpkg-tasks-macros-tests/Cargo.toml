@@ -1,0 +1,18 @@
+[package]
+name = "nxpkg-tasks-macros-tests"
+version = "0.1.0"
+description = "TBD"
+license = "MPL-2.0"
+edition = "2021"
+
+[dev-dependencies]
+anyhow = { workspace = true }
+tokio = { workspace = true }
+nxpkg-tasks = { workspace = true }
+nxpkg-tasks-memory = { workspace = true }
+nxpkg-tasks-testing = { workspace = true }
+# TODO: nxpkg-tasks-testing uses a macro that requires us to depend on lazy-static.
+lazy_static = { workspace = true }
+
+[build-dependencies]
+nxpkg-tasks-build = { workspace = true }

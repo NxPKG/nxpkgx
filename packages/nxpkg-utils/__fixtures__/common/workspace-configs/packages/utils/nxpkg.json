@@ -1,0 +1,9 @@
+{
+  "$schema": "https://nxpkg.build/schema.json",
+  // invalid config - missing extends
+  "pipeline": {
+    "build": {
+      "env": ["IS_SERVER"]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nxpkg run build",
+    "dev": "nxpkg run dev",
+    "lint": "nxpkg run lint",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.7.0",
+    "nxpkg": "latest"
+  },
+  "packageManager": "pnpm@8.9.0"
+}

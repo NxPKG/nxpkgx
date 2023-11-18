@@ -1,0 +1,13 @@
+# Welcome to Nxpkgrepo
+
+[Nxpkgrepo](https://nxpkg.build/repo) is a high-performance monorepo build-system for modern JavaScript and TypeScript codebases.
+
+To get started, open a new shell and run:
+
+```sh
+npx create-nxpkg@latest
+```
+
+Then follow the prompts you see in your terminal.
+
+For more information about Nxpkgrepo, [visit nxpkg.build/repo](https://nxpkg.build/repo) and follow us on X ([@turborepo](https://x.com/nxpkgrepo))!
