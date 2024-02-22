@@ -4372,9 +4372,9 @@ ip-regex@^2.1.0:
   integrity sha512-58yWmlHpp7VYfcdTwMTvwMmqx/Elfxjd9RXTDyMsbL7lLWmhMylLEqiYVLKuLzOZqVgiWXD9MfR62Vv89VRxkw==
 
 ip@^1.1.5:
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.8.tgz#ae05948f6b075435ed3307acce04629da8cdbf48"
-  integrity sha512-PuExPYUiu6qMBQb4l06ecm6T6ujzhmh+MeJcW9wa89PoAz5pvd4zPgN5WJV104mb6S2T1AwNIAaB70JNrLQWhg==
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.9.tgz#8dfbcc99a754d07f425310b86a99546b1151e396"
+  integrity sha512-cyRxvOEpNHNtchU3Ln9KC/auJgup87llfQpQ+t5ghoC/UhL16SWzbueiCsdTnWmqAWl7LadfuwhlqmtOaqMHdQ==
 
 ipaddr.js@^1.9.0:
   version "1.9.1"
@@ -5947,6 +5947,48 @@ nullthrows@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/nullthrows/-/nullthrows-1.1.1.tgz#7818258843856ae971eae4208ad7d7eb19a431b1"
   integrity sha512-2vPPEi+Z7WqML2jZYddDIfy5Dqb0r2fze2zTxNNknZaFpVHU3mFB3R+DWeJWGVx0ecvttSGlJTI+WG+8Z4cDWw==
+
+nxpkg-darwin-64@1.9.6:
+  version "1.9.6"
+  resolved "https://registry.yarnpkg.com/nxpkg-darwin-64/-/nxpkg-darwin-64-1.9.6.tgz#fb391943b8b4c5e72cd6aaebc57d177a26b5d98e"
+  integrity sha512-9jmxyCAcPrJiPD/EmtK2tObrPGblmyORCgNgtcw1iozcfC7kqungWTfbnHrvTNUfUmVhH0sA3BGzshpuslbQHg==
+
+nxpkg-darwin-arm64@1.9.6:
+  version "1.9.6"
+  resolved "https://registry.yarnpkg.com/nxpkg-darwin-arm64/-/nxpkg-darwin-arm64-1.9.6.tgz#852aa7c97f5688082df06607cbdf7b9623eff782"
+  integrity sha512-5f8ajEi8mOdAZ0AXavu/TzkHGEUi7tw+paefff7KK+XTUrdeyTlf8ULiTI+r97uH1jsYeTeL4JPu9IsEx+bL6g==
+
+nxpkg-linux-64@1.9.6:
+  version "1.9.6"
+  resolved "https://registry.yarnpkg.com/nxpkg-linux-64/-/nxpkg-linux-64-1.9.6.tgz#c716247e27a9e8a53ab240272cd189bf0d8a6f08"
+  integrity sha512-UrCDMl2Nqd/kxNEJonqvDg8nmZU4UggVQTmqcdYyuOiCA3H98jxggQqZh1VGeF23XDbCWHSQjnbkLeoUvQJWKw==
+
+nxpkg-linux-arm64@1.9.6:
+  version "1.9.6"
+  resolved "https://registry.yarnpkg.com/nxpkg-linux-arm64/-/nxpkg-linux-arm64-1.9.6.tgz#0c4aad0a502e79494d13775a81348d17bb9f581c"
+  integrity sha512-oOxAT6lNiMpYVZPWzFNsUvC2LQgKYyH4aBnkeoBnjuAUk8BK5AhUWSWl4QlfTcBWW4LnjDPeZQKrbnxvHhPVsw==
+
+nxpkg-windows-64@1.9.6:
+  version "1.9.6"
+  resolved "https://registry.yarnpkg.com/nxpkg-windows-64/-/nxpkg-windows-64-1.9.6.tgz#8852355f0ab51582cb85ba1393fe6a9b91773ee4"
+  integrity sha512-65UxLL1vb5RItzJYNerO5c+yPMzSnD+GvJxfBZIvAwSnb+4ulhPRHzQOYinVq4PZ2DosBZOorWPRf97POmhvog==
+
+nxpkg-windows-arm64@1.9.6:
+  version "1.9.6"
+  resolved "https://registry.yarnpkg.com/nxpkg-windows-arm64/-/nxpkg-windows-arm64-1.9.6.tgz#971e33503388ae53a6af7f4356ec579c604ef5f6"
+  integrity sha512-aF9VzYT+vaKNbZGDccN7AYrNhph4gr6yOFN7GtTr777IwS5FGW7evku7RScsua5r2HwVKvBO2WjyadpbXuoOOQ==
+
+nxpkg@^1.9.3:
+  version "1.9.6"
+  resolved "https://registry.yarnpkg.com/nxpkg/-/nxpkg-1.9.6.tgz#48924ba8afba760b5c4ff6a6e1c48129df338c38"
+  integrity sha512-mLbCIAYNbSm60kVhBiAr+YA1BYpPObS/y7rqw1hjh36ZdJDp35lUSeqdBs6oGt0Y4hnmN4ZeIXu8zMVRR03/vw==
+  optionalDependencies:
+    nxpkg-darwin-64 "1.9.6"
+    nxpkg-darwin-arm64 "1.9.6"
+    nxpkg-linux-64 "1.9.6"
+    nxpkg-linux-arm64 "1.9.6"
+    nxpkg-windows-64 "1.9.6"
+    nxpkg-windows-arm64 "1.9.6"
 
 ob1@0.67.0:
   version "0.67.0"
@@ -7589,48 +7631,6 @@ tsup@^6.0.1:
     source-map "0.8.0-beta.0"
     sucrase "^3.20.3"
     tree-kill "^1.2.2"
-
-nxpkg-darwin-64@1.9.6:
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/nxpkg-darwin-64/-/nxpkg-darwin-64-1.9.6.tgz#fb391943b8b4c5e72cd6aaebc57d177a26b5d98e"
-  integrity sha512-9jmxyCAcPrJiPD/EmtK2tObrPGblmyORCgNgtcw1iozcfC7kqungWTfbnHrvTNUfUmVhH0sA3BGzshpuslbQHg==
-
-nxpkg-darwin-arm64@1.9.6:
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/nxpkg-darwin-arm64/-/nxpkg-darwin-arm64-1.9.6.tgz#852aa7c97f5688082df06607cbdf7b9623eff782"
-  integrity sha512-5f8ajEi8mOdAZ0AXavu/TzkHGEUi7tw+paefff7KK+XTUrdeyTlf8ULiTI+r97uH1jsYeTeL4JPu9IsEx+bL6g==
-
-nxpkg-linux-64@1.9.6:
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/nxpkg-linux-64/-/nxpkg-linux-64-1.9.6.tgz#c716247e27a9e8a53ab240272cd189bf0d8a6f08"
-  integrity sha512-UrCDMl2Nqd/kxNEJonqvDg8nmZU4UggVQTmqcdYyuOiCA3H98jxggQqZh1VGeF23XDbCWHSQjnbkLeoUvQJWKw==
-
-nxpkg-linux-arm64@1.9.6:
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/nxpkg-linux-arm64/-/nxpkg-linux-arm64-1.9.6.tgz#0c4aad0a502e79494d13775a81348d17bb9f581c"
-  integrity sha512-oOxAT6lNiMpYVZPWzFNsUvC2LQgKYyH4aBnkeoBnjuAUk8BK5AhUWSWl4QlfTcBWW4LnjDPeZQKrbnxvHhPVsw==
-
-nxpkg-windows-64@1.9.6:
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/nxpkg-windows-64/-/nxpkg-windows-64-1.9.6.tgz#8852355f0ab51582cb85ba1393fe6a9b91773ee4"
-  integrity sha512-65UxLL1vb5RItzJYNerO5c+yPMzSnD+GvJxfBZIvAwSnb+4ulhPRHzQOYinVq4PZ2DosBZOorWPRf97POmhvog==
-
-nxpkg-windows-arm64@1.9.6:
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/nxpkg-windows-arm64/-/nxpkg-windows-arm64-1.9.6.tgz#971e33503388ae53a6af7f4356ec579c604ef5f6"
-  integrity sha512-aF9VzYT+vaKNbZGDccN7AYrNhph4gr6yOFN7GtTr777IwS5FGW7evku7RScsua5r2HwVKvBO2WjyadpbXuoOOQ==
-
-nxpkg@^1.9.3:
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/nxpkg/-/nxpkg-1.9.6.tgz#48924ba8afba760b5c4ff6a6e1c48129df338c38"
-  integrity sha512-mLbCIAYNbSm60kVhBiAr+YA1BYpPObS/y7rqw1hjh36ZdJDp35lUSeqdBs6oGt0Y4hnmN4ZeIXu8zMVRR03/vw==
-  optionalDependencies:
-    nxpkg-darwin-64 "1.9.6"
-    nxpkg-darwin-arm64 "1.9.6"
-    nxpkg-linux-64 "1.9.6"
-    nxpkg-linux-arm64 "1.9.6"
-    nxpkg-windows-64 "1.9.6"
-    nxpkg-windows-arm64 "1.9.6"
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
